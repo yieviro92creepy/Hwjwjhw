@@ -1,0 +1,299 @@
+-- gui v2.7.0
+
+local bypasser = Instance.new("ScreenGui")
+local EnterKey = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local Get = Instance.new("TextButton")
+local GetKey = Instance.new("UICorner")
+local Enter = Instance.new("TextButton")
+local GetKey_2 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local bypassfirst = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local bypassVoid = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local bypassSeek = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local bypassScreech = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local bypassA90 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local bypassGreed = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+
+--Properties:
+
+bypasser.Name = "bypasser"
+bypasser.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+bypasser.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+EnterKey.Name = "EnterKey"
+EnterKey.Parent = bypasser
+EnterKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnterKey.Position = UDim2.new(0.315586925, 0, 0.336658359, 0)
+EnterKey.Size = UDim2.new(0, 574, 0, 262)
+
+UICorner.CornerRadius = UDim.new(0, 40)
+UICorner.Parent = EnterKey
+
+TextBox.Parent = EnterKey
+TextBox.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+TextBox.BorderColor3 = Color3.fromRGB(179, 179, 179)
+TextBox.Position = UDim2.new(0.327526152, 0, 0.198473275, 0)
+TextBox.Size = UDim2.new(0, 334, 0, 96)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.PlaceholderText = "Put The Key Here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 50.000
+
+UICorner_2.CornerRadius = UDim.new(0, 25)
+UICorner_2.Parent = TextBox
+
+Get.Name = "Get"
+Get.Parent = EnterKey
+Get.BackgroundColor3 = Color3.fromRGB(255, 246, 211)
+Get.Position = UDim2.new(0.0662020892, 0, 0.274809152, 0)
+Get.Size = UDim2.new(0, 116, 0, 33)
+Get.Font = Enum.Font.SourceSans
+Get.Text = "Get Key"
+Get.TextColor3 = Color3.fromRGB(0, 0, 0)
+Get.TextSize = 30.000
+
+GetKey.CornerRadius = UDim.new(0, 18)
+GetKey.Name = "GetKey"
+GetKey.Parent = Get
+
+Enter.Name = "Enter"
+Enter.Parent = EnterKey
+Enter.BackgroundColor3 = Color3.fromRGB(255, 246, 211)
+Enter.Position = UDim2.new(0.517421603, 0, 0.725190818, 0)
+Enter.Size = UDim2.new(0, 116, 0, 33)
+Enter.Font = Enum.Font.SourceSans
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enter.TextSize = 30.000
+
+GetKey_2.CornerRadius = UDim.new(0, 18)
+GetKey_2.Name = "GetKey"
+GetKey_2.Parent = Enter
+
+Frame.Parent = bypasser
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.315586925, 0, 0.134663343, 0)
+Frame.Size = UDim2.new(0, 710, 0, 586)
+Frame.Visible = false
+
+UICorner_3.CornerRadius = UDim.new(0, 50)
+UICorner_3.Parent = Frame
+
+bypassfirst.Name = "bypassfirst"
+bypassfirst.Parent = Frame
+bypassfirst.BackgroundColor3 = Color3.fromRGB(13, 255, 0)
+bypassfirst.Position = UDim2.new(0.0394366197, 0, 0.0904436857, 0)
+bypassfirst.Size = UDim2.new(0, 657, 0, 50)
+bypassfirst.Font = Enum.Font.SourceSans
+bypassfirst.Text = "Bypass Anti-Cheat (Click This And Buy Lighter You need not Full to 50 Knobs)"
+bypassfirst.TextColor3 = Color3.fromRGB(0, 0, 0)
+bypassfirst.TextSize = 25.000
+
+UICorner_4.CornerRadius = UDim.new(0, 15)
+UICorner_4.Parent = bypassfirst
+
+bypassVoid.Name = "bypassVoid"
+bypassVoid.Parent = Frame
+bypassVoid.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bypassVoid.Position = UDim2.new(0.283098578, 0, 0.191126287, 0)
+bypassVoid.Size = UDim2.new(0, 307, 0, 50)
+bypassVoid.Font = Enum.Font.SourceSans
+bypassVoid.Text = "Bypass Void"
+bypassVoid.TextColor3 = Color3.fromRGB(255, 255, 255)
+bypassVoid.TextSize = 25.000
+
+UICorner_5.CornerRadius = UDim.new(0, 15)
+UICorner_5.Parent = bypassVoid
+
+bypassSeek.Name = "bypassSeek"
+bypassSeek.Parent = Frame
+bypassSeek.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+bypassSeek.Position = UDim2.new(0.283098578, 0, 0.291808873, 0)
+bypassSeek.Size = UDim2.new(0, 307, 0, 50)
+bypassSeek.Font = Enum.Font.SourceSans
+bypassSeek.Text = "Bypass Seek (Only In Solo)"
+bypassSeek.TextColor3 = Color3.fromRGB(255, 255, 255)
+bypassSeek.TextSize = 25.000
+
+UICorner_6.CornerRadius = UDim.new(0, 15)
+UICorner_6.Parent = bypassSeek
+
+bypassScreech.Name = "bypassScreech"
+bypassScreech.Parent = Frame
+bypassScreech.BackgroundColor3 = Color3.fromRGB(11, 9, 35)
+bypassScreech.Position = UDim2.new(0.285915494, 0, 0.399317414, 0)
+bypassScreech.Size = UDim2.new(0, 307, 0, 50)
+bypassScreech.Font = Enum.Font.SourceSans
+bypassScreech.Text = "No Screech (Bypass Screech)"
+bypassScreech.TextColor3 = Color3.fromRGB(255, 255, 255)
+bypassScreech.TextSize = 25.000
+
+UICorner_7.CornerRadius = UDim.new(0, 15)
+UICorner_7.Parent = bypassScreech
+
+bypassA90.Name = "bypassA90"
+bypassA90.Parent = Frame
+bypassA90.BackgroundColor3 = Color3.fromRGB(140, 0, 0)
+bypassA90.Position = UDim2.new(0.283098578, 0, 0.505119443, 0)
+bypassA90.Size = UDim2.new(0, 307, 0, 50)
+bypassA90.Font = Enum.Font.SourceSans
+bypassA90.Text = "No A-90 (Bypass A-90)"
+bypassA90.TextColor3 = Color3.fromRGB(255, 255, 255)
+bypassA90.TextSize = 25.000
+
+UICorner_8.CornerRadius = UDim.new(0, 15)
+UICorner_8.Parent = bypassA90
+
+bypassGreed.Name = "bypassGreed"
+bypassGreed.Parent = Frame
+bypassGreed.BackgroundColor3 = Color3.fromRGB(140, 66, 60)
+bypassGreed.Position = UDim2.new(0.283098578, 0, 0.614334464, 0)
+bypassGreed.Size = UDim2.new(0, 307, 0, 50)
+bypassGreed.Font = Enum.Font.SourceSans
+bypassGreed.Text = "No Greed (Bypass Greed)"
+bypassGreed.TextColor3 = Color3.fromRGB(255, 255, 255)
+bypassGreed.TextSize = 25.000
+
+UICorner_9.CornerRadius = UDim.new(0, 15)
+UICorner_9.Parent = bypassGreed
+
+-- Scripts:
+
+local function NSLNY_fake_script() -- Enter.LocalScript 
+	local script = Instance.new('LocalScript', Enter)
+
+	script.Parent.Parent.Enter.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.TextBox.Text == "LouisHub138681-v2.7.5freeues2" then
+			script.Parent.Parent.Parent.EnterKey.Visible = false
+			script.Parent.Parent.Parent.Frame.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(NSLNY_fake_script)()
+local function KDKVKCR_fake_script() -- bypassfirst.LocalScript 
+	local script = Instance.new('LocalScript', bypassfirst)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").ItemShop.Lighter:SetAttribute("Price", 5)
+	end)
+end
+coroutine.wrap(KDKVKCR_fake_script)()
+local function HYJMRU_fake_script() -- bypassVoid.LocalScript 
+	local script = Instance.new('LocalScript', bypassVoid)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("ReplicatedStorage").ClientModules.EntityModules.Void:Destroy()
+	end)
+end
+coroutine.wrap(HYJMRU_fake_script)()
+local function TBTD_fake_script() -- bypassSeek.LocalScript 
+	local script = Instance.new('LocalScript', bypassSeek)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			game.Workspace.SeekMoving:Destroy()
+		end
+		game:GetService("ReplicatedStorage").ClientModules.EntityModules.Seek:Destroy()
+	end)
+end
+coroutine.wrap(TBTD_fake_script)()
+local function KOCXP_fake_script() -- bypassScreech.LocalScript 
+	local script = Instance.new('LocalScript', bypassScreech)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Name = "AmNotScreechWth"
+		wait(0.5)
+		game.Players.LocalPlayer.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech:Destroy()
+		game:GetService("ReplicatedStorage").Entities.Screech:Destroy()
+	end)
+end
+coroutine.wrap(KOCXP_fake_script)()
+local function DIHMO_fake_script() -- bypassA90.LocalScript 
+	local script = Instance.new('LocalScript', bypassA90)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.MainUI.Initiator.Main_Game.RemoteListener.Modules.A90:Destroy()
+	end)
+end
+coroutine.wrap(DIHMO_fake_script)()
+local function JKHSED_fake_script() -- bypassGreed.LocalScript 
+	local script = Instance.new('LocalScript', bypassGreed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.MainUI.Initiator.Main_Game.RemoteListener.Modules.Greed.name = "nogreed"
+		wait(0.5)
+		game.Players.LocalPlayer.MainUI.Initiator.Main_Game.RemoteListener.Modules.Greed:Destroy()
+	end)
+end
+coroutine.wrap(JKHSED_fake_script)()
+local function YSDBFL_fake_script() -- Frame.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(YSDBFL_fake_script)()
